@@ -1,0 +1,25 @@
+{
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {
+                    "title": "Fayette County Courthouse",
+                    "status": "completed",
+                    "description": "Comprehensive restoration of the 1899 Romanesque Revival exterior.",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fayette_County_Courthouse_Lexington.jpg/300px-Fayette_County_Courthouse_Lexington.jpg"
+                },
+                "geometry": { "type": "Point", "coordinates": [-84.4970, 38.0464] }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "title": "Ongoing Union Station Project",
+                    "status": "ongoing",
+                    "description": "Structural reinforcement and interior preservation.",
+                    "image": "https://via.placeholder.com/300x150?text=Project+Photo"
+                },
+                "geometry": { "type": "Point", "coordinates": [-94.5857, 39.0853] }
+            }
+        ]
+    }
