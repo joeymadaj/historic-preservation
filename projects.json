@@ -7,17 +7,17 @@
                     "title": "Fayette County Courthouse",
                     "status": "completed",
                     "description": "Comprehensive restoration of the 1899 Romanesque Revival exterior.",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fayette_County_Courthouse_Lexington.jpg/300px-Fayette_County_Courthouse_Lexington.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Old_Fayette_County_Courthouse_%283%29.jpg/330px-Old_Fayette_County_Courthouse_%283%29.jpg"
                 },
                 "geometry": { "type": "Point", "coordinates": [-84.4970, 38.0464] }
             },
             {
                 "type": "Feature",
                 "properties": {
-                    "title": "Ongoing Union Station Project",
-                    "status": "ongoing",
+                    "title": "Union Station",
+                    "status": "precedent",
                     "description": "Structural reinforcement and interior preservation.",
-                    "image": "https://via.placeholder.com/300x150?text=Project+Photo"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/KCUnionStation.jpg/500px-KCUnionStation.jpg"
                 },
                 "geometry": { "type": "Point", "coordinates": [-94.5857, 39.0853] }
             },
@@ -38,12 +38,24 @@
   "properties": {
     "title": "Kentucky's Old State Capitol",
     "status": "ongoing",
-    "description": "The **Old State Capitol** in Kentucky, also known as **Old Statehouse**, is the former capitol building of the Commonwealth of Kentucky",
+    "description": "The Old State Capitol in Kentucky, also known as Old Statehouse, is the former capitol building of the Commonwealth of Kentucky",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Kentucky_Old_State_Capitol_-_DSC09284.JPG/330px-Kentucky_Old_State_Capitol_-_DSC09284.JPG"
   },
   "geometry": {
     "type": "Point",
     "coordinates": [-84.87659519379747, 38.20031807824898] }
-}              
+},
+         {
+  "type": "Feature",
+  "properties": {
+    "title": "Book Tower",
+    "status": "precedent",
+    "description": "Book Tower is a 145 m (476 ft), 38-story skyscraper located at 1265 Washington Boulevard in Downtown Detroit, Michigan",
+    "image": "https://imageio.forbes.com/specials-images/imageserve/5e2f9abef133f400076ade41/Rendering-of-the-Book-Tower-Atrium/0x0.jpg?crop=1200%2C1200%2Cx0%2Cy0%2Csafe&width=960"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-83.05153780998069, 42.33352085924295] }
+}         
         ]
     }
