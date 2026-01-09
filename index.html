@@ -82,43 +82,35 @@
     });
 
 map.on('load', () => {
-    // This tells the map to fetch your separate JSON file
-    map.addSource('projects', {
-        type: 'geojson',
-        data: './projects.json' // This points to your new file
-    });
+        // 1. Fetch the data from your external file
+        map.addSource('projects', {
+            type: 'geojson',
+            data: './projects.json' 
+        });
 
-    // The rest of your map.addLayer code stays exactly the same...
-    map.addLayer({
-        id: 'project-dots',
-        // ... all your existing paint/color logic here ...
-    });
-});
-
-        // Add the Dots (The Layer)
+        // 2. Add the Dots Layer
         map.addLayer({
             id: 'project-dots',
             type: 'circle',
             source: 'projects',
             paint: {
-                // COLOR CODING LOGIC
                 'circle-color': [
                     'match',
                     ['get', 'status'],
-                    'completed', '#2ecc71', // Green
-                    'ongoing', '#f1c40f',    // Yellow
-                    'needs-work', '#e74c3c', // Red
-                    'precedent', '#3498db',  // Blue
-                    '#ccc'                   // Default Gray
+                    'completed', '#2ecc71',
+                    'ongoing', '#f1c40f',
+                    'needs-work', '#e74c3c',
+                    'precedent', '#3498db',
+                    '#ccc'
                 ],
                 'circle-radius': 8,
                 'circle-stroke-width': 2,
                 'circle-stroke-color': '#ffffff',
-                'circle-blur': 0.1
+                'circle-blur': 0.3
             }
         });
 
-        // HOVER POPUP LOGIC
+        // 3. HOVER POPUP LOGIC
         const popup = new mapboxgl.Popup({
             closeButton: false,
             closeOnClick: false
@@ -130,7 +122,6 @@ map.on('load', () => {
             const coordinates = e.features[0].geometry.coordinates.slice();
             const { title, description, status, image } = e.features[0].properties;
 
-            // Define the HTML inside the popup
             const content = `
                 <img class="popup-image" src="${image}">
                 <div class="popup-status">${status}</div>
@@ -145,12 +136,14 @@ map.on('load', () => {
             map.getCanvas().style.cursor = '';
             popup.remove();
         });
-    });
+
+    }); // This closes the map.on('load')
 </script>
 
 </body>
 
 </html>
+
 
 
 
